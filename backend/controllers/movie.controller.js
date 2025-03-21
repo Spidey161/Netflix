@@ -7,7 +7,7 @@ export async function getTrendingMovie(req, res) {
 
 		res.json({ success: true, content: randomMovie });
 	} catch (error) {
-		res.status(500).json({ success: false, message: "Internal Server Error" });
+		res.status(500).json({ success: false, message: error.message });
 	}
 }
 

@@ -11,6 +11,9 @@ import { ENV_VARS } from "./config/envVars.js";
 import { connectDB } from "./config/db.js";
 import { protectRoute } from "./middleware/protectRoute.js";
 
+
+
+
 const app = express();
 
 const PORT = ENV_VARS.PORT;
